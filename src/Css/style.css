@@ -343,6 +343,159 @@ a {
 
 /* Start About Section */
 
+.about {
+	background-color: var(--main-color);
+	padding: 35px 0;
+}
 
+.about .container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.about .container .right {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
+.about .container .right h4:first-of-type {
+	text-transform: uppercase;
+	color: #726ae3;
+}
+
+.about .container .right h1 {
+	font-size: 40px;
+	color: var(--main-text-color);
+}
+
+.about .container .right h1 span {
+	color: #726ae3;
+}
+
+.about .container .right .line {
+	position: relative;
+	margin-bottom: 12px;
+}
+
+.about .container .right .line::before {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2.5px;
+	background-color: #726ae3;
+}
+
+.about .container .right p:last-of-type {
+	font-weight: 300;
+	color: #afafaf;
+	font-size: 15px;
+	width: 650px;
+	line-height: 25px;
+}
+
+.about .container .right p:last-of-type a {
+	color: #0d6efd;
+	font-weight: 500;
+}
+
+.progress {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.progress .progress1,
+.progress .progress2,
+.progress .progress3 {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.progress .progress1 svg,
+.progress .progress2 svg,
+.progress .progress3 svg {
+	position: relative;
+	width: 150px;
+	height: 150px;
+}
+
+.progress .progress1 svg circle,
+.progress .progress2 svg circle,
+.progress .progress3 svg circle {
+	width: 150px;
+	height: 150px;
+	fill: none;
+	stroke-width: 5;
+	transform: translate(2px, 7px);
+	stroke-dasharray: 440;
+}
+
+.progress .progress1 .text,
+.progress .progress2 .text,
+.progress .progress3 .text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: var(--main-text-color);
+	padding: 10px;
+}
+
+.progress .progress1 .text h2,
+.progress .progress2 .text h2,
+.progress .progress3 .text h2 {
+	font-size: 35px;
+}
+
+.progress .progress1 .text h5,
+.progress .progress2 .text h5,
+.progress .progress3 .text h5 {
+	color: #afafaf;
+	font-weight: 300;
+	letter-spacing: 1px;
+	font-size: 15px;
+}
+
+@media (max-width: 1410px) {
+	.about {
+		text-align: center;
+	}
+	.about .container {
+		justify-content: center;
+		gap: 20px;
+	}
+	.about .container .left img {
+		width: 80%;
+	}
+	.about .container .right .line {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+@media (max-width: 760px) {
+	.about .container .right h1 {
+		font-size: 25px;
+	}
+	.about .container .right p:last-of-type {
+		width: 100%;
+		font-size: 13px;
+	}
+	.about .container .progress {
+		flex-direction: column;
+		gap: 15px;
+	}
+}
 
 /* End About Section */
