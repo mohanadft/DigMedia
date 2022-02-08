@@ -253,9 +253,9 @@ a {
 
 /* End Header Section */
 
-/* Start Welcome Section */
+/* Start Home Section */
 
-.welcome-sec {
+.home-sec {
 	position: relative;
 	width: 100%;
 	background-color: var(--main-color);
@@ -263,30 +263,30 @@ a {
 	color: var(--main-text-color);
 }
 
-.welcome-sec .container {
+.home-sec .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	flex-wrap: wrap;
 }
 
-.welcome-sec .container .left {
+.home-sec .container .left {
 	display: flex;
 	flex-direction: column;
 	gap: 5px;
 }
 
-.welcome-sec .container p:first-of-type {
+.home-sec .container p:first-of-type {
 	color: var(--primary-color);
 	font-weight: 700;
 	font-size: 23px;
 }
 
-.welcome-sec .container h1 {
+.home-sec .container h1 {
 	font-size: 50px;
 }
 
-.welcome-sec .container p:last-of-type {
+.home-sec .container p:last-of-type {
 	font-weight: 300;
 	color: #afafaf;
 	width: 550px;
@@ -294,45 +294,55 @@ a {
 	font-size: 15px;
 }
 
-.welcome-sec .container .free-qoute {
+.home-sec .container .free-qoute {
 	margin-top: 5px;
 }
 
-.welcome-sec .container img {
+.home-sec .container img {
 	width: 600px;
 }
 
 @media (max-width: 1410px) {
-	.welcome-sec {
+	.home-sec {
 		padding: 60px 0;
 		text-align: center;
 	}
-	.welcome-sec .container {
+	.home-sec .container {
 		justify-content: center;
 	}
-	.welcome-sec .container p:first-of-type {
+	.home-sec .container p:first-of-type {
 		font-size: 16px;
 	}
-	.welcome-sec .container h1 {
+	.home-sec .container h1 {
 		font-size: 35px;
 	}
 
-	.welcome-sec .free-qoute {
+	.home-sec .free-qoute {
 		margin: 0 auto;
 	}
-	.welcome-sec .container img {
-		width: 100%;
+	.home-sec .container img {
+		width: 80%;
 	}
 }
 
-@media (max-width: 600px) {
-	.welcome-sec .container p:last-of-type {
+@media (max-width: 700px) {
+	.home-sec .container p:last-of-type {
 		width: 100%;
 		font-size: 13px;
 		font-weight: 400;
 	}
-	.welcome-sec .container h1 {
+
+	.home-sec .container h1 {
 		font-size: 25px;
 	}
+	.home-sec .container img {
+		width: 100%;
+	}
 }
-/* End Welcome Section */
+/* End Home Section */
+
+/* Start About Section */
+
+
+
+/* End About Section */

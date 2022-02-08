@@ -1,8 +1,8 @@
 import React from 'react'
 
-export const FirstSection = () => {
+export const Home = () => {
 	return (
-		<section className="welcome-sec">
+		<section className="home-sec">
 			<div className="container">
 				<div className="left">
 					<p>DIGITAL MEDIA AGENCY</p>

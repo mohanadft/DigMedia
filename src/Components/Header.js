@@ -1,10 +1,12 @@
 import React, { useRef, useState } from 'react'
 import { CgMenuRight, CgClose } from 'react-icons/cg'
+
 export const Header = () => {
 	const [isClicked, setIsClicked] = useState(false)
 	const links = 'Home,About,Services,Projects,Blog,Contact'.split(',')
 
 	const linksRefs = useRef([])
+	const navbarRef = useRef()
 
 	const linksAsElements = links.map((link, index) => {
 		return (
@@ -26,12 +28,14 @@ export const Header = () => {
 		)
 	})
 
-	const navbarRef = useRef()
-
 	return (
 		<header id="header">
 			<div className="container">
-				<img src="./Images/logo.png" alt="logo" className="logo" />
+				<img
+					src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/logo-v1.png"
+					alt="logo"
+					className="logo"
+				/>
 				<button
 					className="menu"
 					onClick={() => {

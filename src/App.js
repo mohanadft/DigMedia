@@ -1,7 +1,9 @@
 import React from 'react'
-import { Header } from './Components/Header'
 import { PreHeader } from './Components/PreHeader'
-import { FirstSection } from './Components/FirstSection'
+import { Header } from './Components/Header'
+import { Home } from './Components/Home'
+import { About } from './Components/About'
+
 import './Css/style.css'
 
 export const App = () => {
@@ -9,7 +11,8 @@ export const App = () => {
 		<div>
 			<PreHeader />
 			<Header />
-			<FirstSection />
+			<Home />
+			<About />
 		</div>
 	)
 }
