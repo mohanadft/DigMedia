@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Home = () => {
 	return (
-		<section className="home-sec">
+		<section className="home-sec" id="home">
 			<div className="container">
 				<div className="left">
 					<p>DIGITAL MEDIA AGENCY</p>

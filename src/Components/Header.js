@@ -12,7 +12,8 @@ export const Header = () => {
 		return (
 			<li className="nav-item" key={index}>
 				<a
-					href="#a"
+					href={`#${link.toLowerCase()}`}
+					data-sec={link.toLowerCase()}
 					className={`nav-link ${index === 0 ? `active` : ``}`}
 					ref={e => (linksRefs.current[index] = e)}
 					onClick={e => {
