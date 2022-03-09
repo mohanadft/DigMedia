@@ -7,18 +7,19 @@
 
 html {
 	font-size: 16px;
+	scroll-behavior: smooth;
 }
 
 :root {
 	--main-color: #fff;
 	--main-text-color: #2a2a2a;
-	--primary-color: #fa65b1;
+	--primary-color: #4da6e7;
 }
 
 .dark-mode {
 	--main-color: #2a2a2a;
 	--main-text-color: #fff;
-	--primary-color: #fa65b1;
+	--primary-color: #4da6e7;
 }
 
 a {
@@ -50,6 +51,7 @@ a {
 	border-radius: 50%;
 	background-color: var(--main-color);
 	transition: 0.5s all;
+	font-size: 19px;
 }
 
 .pre-header .toggle svg {
@@ -201,7 +203,7 @@ a {
 }
 
 #header .container .navbar .nav-list .nav-item .nav-link.active {
-	color: #fa65b1;
+	color: var(--primary-color);
 }
 
 #header .container .navbar .nav-list .nav-item .nav-link.active::before {
@@ -244,7 +246,7 @@ a {
 	#header .container .navbar {
 		position: absolute;
 		display: flex;
-		top: 104px;
+		top: 75px;
 		left: 0;
 		flex-direction: column;
 		justify-content: center;
@@ -280,6 +282,7 @@ a {
 	background-color: var(--main-color);
 	transition: 0.3s all;
 	color: var(--main-text-color);
+	padding: 0 35px;
 }
 
 .home-sec .container {
@@ -382,7 +385,7 @@ a {
 
 .about .container .right h4:first-of-type {
 	text-transform: uppercase;
-	color: #726ae3;
+	color: #4da6e7;
 }
 
 .about .container .right h1 {
@@ -391,7 +394,7 @@ a {
 }
 
 .about .container .right h1 span {
-	color: #726ae3;
+	color: #4da6e7;
 }
 
 .about .container .right .line {
@@ -404,7 +407,7 @@ a {
 	position: absolute;
 	width: 50px;
 	height: 2.5px;
-	background-color: #726ae3;
+	background-color: #4da6e7;
 }
 
 .about .container .right p:last-of-type {
@@ -536,7 +539,7 @@ a {
 }
 
 .services .hero-text h4 {
-	color: #726ae3;
+	color: #4da6e7;
 	text-transform: uppercase;
 }
 
@@ -545,7 +548,7 @@ a {
 }
 
 .services .hero-text h1 span {
-	color: #726ae3;
+	color: #4da6e7;
 }
 
 .services .hero-text .line {
@@ -560,7 +563,7 @@ a {
 	top: 0;
 	width: 30px;
 	height: 3px;
-	background-color: #726ae3;
+	background-color: #4da6e7;
 }
 
 .services .hero-text .line::after {
@@ -570,7 +573,7 @@ a {
 	top: 0;
 	width: 30px;
 	height: 3px;
-	background-color: #726ae3;
+	background-color: #4da6e7;
 }
 
 .services .services-list {
@@ -687,4 +690,146 @@ a {
 		font-size: 13px;
 	}
 }
+
 /* End Services Section */
+
+.grow {
+	text-align: center;
+	padding: 75px 0;
+	background-image: url(https://templatemo.com/templates/templatemo_568_digimedia/assets/images/quote-bg-v3.jpg);
+	color: #fff;
+}
+
+.grow .container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.grow .container h1 {
+	font-size: 30px;
+}
+
+.grow .container .line {
+	position: relative;
+	margin-bottom: 15px;
+}
+
+.grow .container .line::before {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.grow .container .line::after {
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 0;
+	width: 30px;
+	height: 2px;
+	background-color: #fff;
+}
+
+.grow .container .form input {
+	border: 0;
+	padding: 20px;
+	font-size: 16px;
+}
+
+.grow .container .form input:first-of-type {
+	border-top-left-radius: 35px;
+	border-bottom-left-radius: 35px;
+}
+
+.grow .container .form button {
+	border: 0;
+	padding: 20px;
+	border-top-right-radius: 35px;
+	border-bottom-right-radius: 35px;
+	font-size: 16px;
+	cursor: pointer;
+	background-color: #4da6e7;
+	color: #fff;
+}
+
+.scroll-btn {
+	position: fixed;
+	right: 15px;
+	bottom: -50px;
+	z-index: 155555;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: 0;
+	background-color: var(--main-text-color);
+	color: var(--main-color);
+	padding: 10px;
+	font-size: 25px;
+	border-radius: 10px;
+	font-weight: 700;
+	cursor: pointer;
+	transition: 0.5s all ease;
+}
+
+.scroll-btn:hover {
+	background-color: var(--main-color);
+	color: var(--main-text-color);
+}
+
+.scroll-btn.active {
+	bottom: 15px;
+}
+
+.projects {
+	padding: 70px 0;
+	background-color: var(--main-color);
+	color: var(--main-text-color);
+}
+
+.projects .container h4 {
+	text-transform: uppercase;
+	color: #4da6e7;
+}
+
+.projects .container h1 {
+	font-size: 30px;
+}
+
+.projects .container h1 span {
+	color: #4da6e7;
+}
+
+.projects .container .line {
+	position: relative;
+	margin-top: 12px;
+}
+
+.projects .container .line::before {
+	content: '';
+	position: absolute;
+	width: 50px;
+	height: 2.5px;
+	background-color: #4da6e7;
+}
+
+.projects .container .swiper {
+	cursor: grab;
+	margin-top: 45px;
+}
+
+.projects .container .swiper .slide {
+	border-radius: 15px;
+	background-color: var(--main-color);
+}
+
+.projects .container .swiper .slide img {
+	border-radius: 15px;
+	background-color: var(--main-color);
+}

@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import { CgMenuRight, CgClose } from 'react-icons/cg'
+import { logo } from '../data/Images'
 
 export const Header = () => {
 	const [isClicked, setIsClicked] = useState(false)
@@ -32,11 +33,7 @@ export const Header = () => {
 	return (
 		<header id="header">
 			<div className="container">
-				<img
-					src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/logo-v1.png"
-					alt="logo"
-					className="logo"
-				/>
+				<img src={logo} alt="logo" className="logo" />
 				<button
 					className="menu"
 					onClick={() => {

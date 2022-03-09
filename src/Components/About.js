@@ -29,7 +29,7 @@ export const About = () => {
 			<div className="container">
 				<div className="left">
 					<img
-						src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/about-dec.png"
+						src="https://templatemo.com/templates/templatemo_568_digimedia/assets/images/about-dec-v3.png"
 						alt="about"
 					/>
 				</div>

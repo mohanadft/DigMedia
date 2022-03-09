@@ -21,7 +21,7 @@ export const Home = () => {
 				</div>
 				<div className="right">
 					<img
-						src="https://vendorseg.com/wp-content/uploads/2021/04/Vendors-seo.png"
+						src="https://synapsereality.io/wp-content/uploads/2021/07/SEO-1024x1024.png"
 						alt=""
 					/>
 				</div>
