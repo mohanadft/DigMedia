@@ -1,6 +1,5 @@
-import React from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react'
-import projectsImages from '../data/Images'
+import { projectsImages } from '../data/Images'
 
 import 'swiper/css'
 export const Projects = () => {
@@ -14,7 +13,7 @@ export const Projects = () => {
 					</h1>
 					<div className="line"></div>
 				</div>
-				<Swiper spaceBetween={50} slidesPerView={4} className="swiper">
+				<Swiper slidesPerView={4} className="swiper">
 					{projectsImages.map((image, i) => {
 						return (
 							<SwiperSlide key={i} className="slide">
